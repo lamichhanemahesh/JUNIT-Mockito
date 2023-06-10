@@ -1,0 +1,6 @@
+package com.luv2code.springmvc.repository;
+
+public interface MathGradesDao extends CrudRepository<MathGrade,Integer> {
+
+	
+}

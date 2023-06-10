@@ -1,0 +1,86 @@
+package com.luv2code.junitdemo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.DisplayNameGeneration;
+import org.junit.jupiter.api.DisplayNameGenerator;
+import org.junit.jupiter.api.Test;
+
+//@DisplayNameGeneration(DisplayNameGenerator.Simple.class)
+//@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+//@DisplayNameGeneration(DisplayNameGenerator.IndicativeSentences.class)
+public class DemoUtilsTest {
+	
+	DemoUtils demoUtils;
+	
+	@BeforeAll
+	static void setupBeforeEachClass() {
+		System.out.println("Running @BeforeAll");
+	}
+	
+	@AfterAll
+	static void setupAfterEachClass() {
+		System.out.println("Running @AfterAll");
+	}
+	
+	@BeforeEach
+	void setupBeforeEach() {
+		demoUtils = new DemoUtils();
+		System.out.println("Runnint @BeforeEach");
+		
+	}
+	
+	@AfterEach
+	void tearDownAfterEach() {
+		System.out.println("Running @AfterEach");
+	}
+
+	@Test
+//	@DisplayName("Equals and Not Equals")
+	void testEquals_AndNotEquals() {
+		System.out.println("Runnint test: testEqualsAndNotEquals");
+		assertEquals(6,demoUtils.add(2, 4),"2+4 must be 6");
+		assertNotEquals(6, demoUtils.add(1, 9),"1+9 must not be 6");
+	}
+	
+	@Test
+//	@DisplayName("Null and Not Null")
+	void testNullAndNotNull() {
+		System.out.println("Runnint test: testNullANdNotNull");
+		String str1 = null;
+		String str2 = "luv2code";
+		
+		assertNull(demoUtils.checkNull(str1),"Object should be null");
+		assertNotNull(demoUtils.checkNull(str2),"Object should not be null");
+		
+	}
+	
+	@Test
+	@DisplayName("Same and Not Same")
+	void testSameAndNotSame() {
+		String str = "luv2code";
+		assertSame(demoUtils.getAcademy(),demoUtils.getAcademyDuplicate(),"Objects should refer to same object");
+		assertSame(str,demoUtils.getAcademy(),"Objects should not refer to same object");
+	}
+	
+	@Test
+	@DisplayName("True or False")
+	void testTrueAndFalse() {
+		int gradeOne = 10;
+		int gradeTwo = 5;
+		
+		assertTrue(demoUtils.isGreater(gradeOne, gradeTwo),"This should return true");
+		assertFalse(demoUtils.isGreater(gradeOne, gradeTwo),"This should return true");
+	}
+}

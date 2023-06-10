@@ -1,0 +1,53 @@
+package com.luv2code.component;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
+import com.luv2code.component.dao.ApplicationDao;
+import com.luv2code.component.models.CollegeStudent;
+import com.luv2code.component.models.StudentGrades;
+import com.luv2code.component.service.ApplicationService;
+
+public class MockAnnotationTest {
+
+	@Autowired
+	ApplicationContext context;
+	
+	@Autowired
+	CollegeStudent studentOne;
+	
+	@Autowired
+	StudentGrades studentGrades;
+	
+	@Mock
+	private ApplicationDao applicationDao;
+	
+	@InjectMocks
+	private ApplicationService applicationServie;
+	
+	@BeforeEach
+	public void beforeEach() {
+		studentOne.setFirstname("Eric");
+		studentOne.setLastname("Roby");
+		studentOne.setEmailAddress("eric.roby@luv2code.com");
+		studentOne.setStudentGrades(studentGrades);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

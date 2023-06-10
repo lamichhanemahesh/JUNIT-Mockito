@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGenerator.Simple"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGeneration"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGenerator"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGenerator.IndicativeSentences"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer.DisplayName"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer.MethodName"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer.OrderAnnotation"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.condition.OS"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.condition.EnabledIfSystemProperty"/>
+    <fullyQualifiedTypeName name="org.assertj.core.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.luv2code.springmvc.models.MathGrade"/>
+    <fullyQualifiedTypeName name="com.luv2code.springmvc.repository.MathGradesDao"/>
+    <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.luv2code.springmvc.models.StudentGrades"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.test.web.servlet.request.MockMvcRequestBuilders"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+</qualifiedTypeNameHistroy>

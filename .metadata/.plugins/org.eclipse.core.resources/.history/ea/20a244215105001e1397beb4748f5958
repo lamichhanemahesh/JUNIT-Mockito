@@ -1,0 +1,58 @@
+package com.luv2code.springmvc;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
+
+import com.luv2code.springmvc.models.CollegeStudent;
+import com.luv2code.springmvc.repository.StudentDao;
+import com.luv2code.springmvc.service.StudentAndGradeService;
+
+@TestPropertySource("/application.properties")
+@SpringBootTest
+public class DemoTest {
+	
+	@Autowired
+	private StudentAndGradeService studentService;
+	
+	@Autowired
+	private StudentDao studentDao;
+	
+	
+	@BeforeEach
+	publiv
+
+	@Test
+	@Disabled
+	public void createStudentService() {
+		
+		studentService.createStudent("Chad", "Darby", "chad.darby@luv2code_school.com");
+		CollegeStudent student = studentDao.findByEmailAddress("chad.darby@luv2ocde_school.com");
+		assertEquals("chad.darby@luv2code_school.com",student.getEmailAddress(),"find by email");
+		
+	}
+	
+	public void isStudentNullCheck() {
+		assertTrue(studentService.checkIfStudentNull(1));
+		assertFalse(studentService.checkIfStudentNull(0));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

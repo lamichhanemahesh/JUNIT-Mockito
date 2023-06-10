@@ -1,0 +1,6 @@
+package com.luv2code.springmvc.repository;
+
+@Repository
+public interface StudentDao implements JpaRepository<> {
+
+}

@@ -1,0 +1,65 @@
+package com.luv2code.component;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
+import com.luv2code.component.dao.ApplicationDao;
+import com.luv2code.component.models.CollegeStudent;
+import com.luv2code.component.models.StudentGrades;
+import com.luv2code.component.service.ApplicationService;
+
+public class MockAnnotationTest {
+
+	@Autowired
+	ApplicationContext context;
+	
+	@Autowired
+	CollegeStudent collegeStudent;
+	
+	@Autowired
+	StudentGrades studentGrades;
+	
+	@Mock
+	private ApplicationDao applicationDao;
+	
+	@InjectMocks
+	private ApplicationService applicationServie;
+	
+	@BeforeEach
+	public void beforeEach() {
+		collegeStudent.setFirstname("Eric");
+		collegeStudent.setLastname("Roby");
+		collegeStudent.setEmailAddress("eric.roby@luv2code.com");
+		collegeStudent.setStudentGrades(studentGrades);
+	}
+	
+	@DisplayName("When & Verify")
+	@Test
+	public void assertEqualsTestAddGrades() {
+		when(applicationDao.addGradeResultsForSingleClass(studentGrades.getMathGradeResults())).thenReturn(100.00);
+		assertEquals(100,applicationServie.addGradeResultsForSingleClass(collegeStudent.getStudentGrades().getMathGradeResults()));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

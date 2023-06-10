@@ -1,0 +1,12 @@
+package com.luv2code.springmvc;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.luv2code.springmvc.models.MathGrade;
+
+@Repository
+public interface HistoryGradesDao extends CrudRepository<HistoryGradesDao,Integer> {
+
+	public Iterable<HistoryGrade> findGradeByStudentId(int id);
+}

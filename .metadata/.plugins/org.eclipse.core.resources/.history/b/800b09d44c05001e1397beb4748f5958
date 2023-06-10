@@ -1,0 +1,5 @@
+package com.luv2code.springmvc.repository;
+
+public class studentDao {
+
+}

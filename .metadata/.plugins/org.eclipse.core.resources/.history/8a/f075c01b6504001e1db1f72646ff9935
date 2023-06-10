@@ -1,0 +1,28 @@
+package com.luv2code.component;
+
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
+import com.luv2code.component.dao.ApplicationDao;
+import com.luv2code.component.models.CollegeStudent;
+import com.luv2code.component.models.StudentGrades;
+import com.luv2code.component.service.ApplicationService;
+
+public class MockAnnotationTest {
+
+	@Autowired
+	ApplicationContext context;
+	
+	@Autowired
+	CollegeStudent collegeStudent;
+	
+	@Autowired
+	StudentGrades studentGrades;
+	
+	@Mock
+	private ApplicationDao applicationDao;
+	
+	private ApplicationService applicationServie;
+	
+}

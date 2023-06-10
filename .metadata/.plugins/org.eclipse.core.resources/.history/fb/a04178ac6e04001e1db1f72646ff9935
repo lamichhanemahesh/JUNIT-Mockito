@@ -1,0 +1,16 @@
+package com.luv2code.component;
+
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class ReflectionTestUtilsTest {
+
+	@Autowired
+	ApplicationContext context;
+	
+	@Autowired
+	CollegeStudent studentOne;
+	
+	@Autowired
+	StudentGrades studentGrades;
+}

@@ -1,0 +1,9 @@
+package com.luv2code.springmvc;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface HistoryGradesDao extends CrudRepository<HistoryGradesDao,Integer> {
+
+}

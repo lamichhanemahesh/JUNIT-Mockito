@@ -1,0 +1,16 @@
+package com.luv2code.component;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
+import com.luv2code.component.models.CollegeStudent;
+
+public class MockAnnotationTest {
+
+	@Autowired
+	ApplicationContext context;
+	
+	@Autowired
+	CollegeStudent collegeStudent;
+	
+}

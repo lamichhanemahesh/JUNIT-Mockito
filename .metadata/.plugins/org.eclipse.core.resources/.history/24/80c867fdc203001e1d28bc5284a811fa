@@ -1,0 +1,11 @@
+package com.luv2code.junitdemo;
+
+import org.junit.jupiter.api.Test;
+
+public class DemoUtilsTest {
+
+	@Test
+	void testEqualsAndNotEquals() {
+		
+	}
+}

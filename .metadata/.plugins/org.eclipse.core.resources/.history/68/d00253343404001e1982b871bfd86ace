@@ -1,0 +1,19 @@
+package com.luv2code.component;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class ApplicationExampleTest {
+	
+	private static int count = 0;
+	
+	@Value("${info.app.name}")
+	private String appInfo;
+	
+	@Test
+	void basicTest() {
+		
+	}
+}

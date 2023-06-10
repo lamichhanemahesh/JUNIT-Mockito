@@ -1,0 +1,8 @@
+package com.luv2code.component;
+
+import org.springframework.boot.test.context.SpringBootTest;
+
+public class MockAnnotationTest {
+
+	
+}

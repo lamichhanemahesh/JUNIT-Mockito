@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\Mahesh\OneDrive\Desktop\JUNIT & MOCKITO\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3031386017.index
+526620972.index
+3173598034.index
+2245054912.index
+1107033971.index
+2566610567.index
+396773058.index
